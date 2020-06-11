@@ -39,6 +39,9 @@ public class EssFile implements Parcelable {
 
     private int itemType = MEDIA;
 
+
+    private int uploadType;//上传类型 0 安全工作方案 1 图纸  2 隔离方案
+
     protected EssFile(Parcel in) {
         mFilePath = in.readString();
         mimeType = in.readString();
@@ -51,6 +54,7 @@ public class EssFile implements Parcelable {
         mFileName = in.readString();
         uri = in.readParcelable(Uri.class.getClassLoader());
         itemType = in.readInt();
+        uploadType=in.readInt();
     }
 
     public static final Creator<EssFile> CREATOR = new Creator<EssFile>() {
@@ -257,6 +261,7 @@ public class EssFile implements Parcelable {
         dest.writeString(mFileName);
         dest.writeParcelable(uri, flags);
         dest.writeInt(itemType);
+        dest.writeInt(uploadType);
     }
 
     @Override
@@ -279,5 +284,13 @@ public class EssFile implements Parcelable {
         result = 31 * result + (uri != null ? uri.hashCode() : 0);
         result = 31 * result + itemType;
         return result;
+    }
+
+    public int getUploadType() {
+        return uploadType;
+    }
+
+    public void setUploadType(int uploadType) {
+        this.uploadType = uploadType;
     }
 }
