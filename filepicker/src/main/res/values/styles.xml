@@ -9,7 +9,7 @@
 	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
 
-<!--	//====================================== Theme Electricity ===========================================-->
+	//====================================== Theme Electricity ===========================================
 
 	<style name="FilePicker.Elec" parent="Theme.AppCompat.Light.NoActionBar">
 		<item name="colorPrimary">@color/elec_primary</item>
@@ -22,8 +22,8 @@
 		<item name="album.emptyView">@drawable/ic_empty_elec</item>
 		<item name="album.emptyView.textColor">@color/elec_album_empty_view</item>
 		<item name="item.placeholder">@color/elec_item_placeholder</item>
-<!--		<item name="item.checkCircle.backgroundColor">@color/elec_item_checkCircle_backgroundColor</item>-->
-<!--		<item name="item.checkCircle.borderColor">@color/elec_item_checkCircle_borderColor</item>-->
+		<item name="item.checkCircle.backgroundColor">@color/elec_item_checkCircle_backgroundColor</item>
+		<item name="item.checkCircle.borderColor">@color/elec_item_checkCircle_borderColor</item>
 		<item name="page.bg">@color/elec_page_bg</item>
 		<item name="bottomToolbar.bg">@color/elec_bottom_toolbar_bg</item>
 		<item name="bottomToolbar.preview.textColor">@color/elec_bottom_toolbar_preview</item>
@@ -42,7 +42,7 @@
 		<item name="android:popupBackground">@color/elec_album_popup_bg</item>
 	</style>
 
-<!--	//===================================== Theme Dracula ==========================================-->
+	//===================================== Theme Dracula ==========================================
 
 	<style name="FilePicker.Dracula" parent="Theme.AppCompat.NoActionBar">
 		<item name="colorPrimary">@color/dracula_primary</item>
@@ -55,8 +55,8 @@
 		<item name="album.emptyView">@drawable/ic_empty_dracula</item>
 		<item name="album.emptyView.textColor">@color/dracula_album_empty_view</item>
 		<item name="item.placeholder">@color/dracula_item_placeholder</item>
-<!--		<item name="item.checkCircle.backgroundColor">@color/dracula_item_checkCircle_backgroundColor</item>-->
-<!--		<item name="item.checkCircle.borderColor">@color/dracula_item_checkCircle_borderColor</item>-->
+		<item name="item.checkCircle.backgroundColor">@color/dracula_item_checkCircle_backgroundColor</item>
+		<item name="item.checkCircle.borderColor">@color/dracula_item_checkCircle_borderColor</item>
 		<item name="page.bg">@color/dracula_page_bg</item>
 		<item name="bottomToolbar.bg">@color/dracula_bottom_toolbar_bg</item>
 		<item name="bottomToolbar.preview.textColor">@color/dracula_bottom_toolbar_preview</item>

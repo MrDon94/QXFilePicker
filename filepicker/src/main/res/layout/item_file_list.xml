@@ -56,20 +56,18 @@
 
         <android.support.v7.widget.AppCompatCheckBox
             android:id="@+id/checkbox_item_file_list"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:enabled="false"
-            android:button="@null"
             android:checked="true"
-            android:drawableLeft="@drawable/bg_check"
-            android:drawablePadding="18pt"
+            android:enabled="false"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             />
+
         <ImageView
             android:id="@+id/iv_item_file_select_right"
             android:layout_width="16dp"
             android:layout_height="wrap_content"
-            android:src="@mipmap/right" />
+            android:src="@mipmap/right"
+            />
 
     </LinearLayout>
 

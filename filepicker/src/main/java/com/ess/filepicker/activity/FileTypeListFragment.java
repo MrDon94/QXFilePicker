@@ -153,7 +153,7 @@ public class FileTypeListFragment extends BaseFileFragment implements BaseQuickA
                 mSelectedFileList.remove(index);
                 EventBus.getDefault().post(new FileScanFragEvent(item, false));
                 mAdapter.getData().get(position).setChecked(!mAdapter.getData().get(position).isChecked());
-                mAdapter.notifyItemChanged(position, "");
+                mAdapter.notifyItemChanged(position);
             }
         } else {
             if (mMaxCount <= 0) {
@@ -164,7 +164,7 @@ public class FileTypeListFragment extends BaseFileFragment implements BaseQuickA
             mSelectedFileList.add(item);
             EventBus.getDefault().post(new FileScanFragEvent(item, true));
             mAdapter.getData().get(position).setChecked(!mAdapter.getData().get(position).isChecked());
-            mAdapter.notifyItemChanged(position, "");
+            mAdapter.notifyItemChanged(position);
         }
 
     }
